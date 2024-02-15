@@ -218,7 +218,7 @@
 
                                 <div class="flex flex-col items-end gap-2 mt-10">
                                     <label for="file-upload"
-                                        class="relative font-semibold bg-white rounded-md cursor-pointer focus-within:ring-2">
+                                        class="relative font-semibold rounded-md cursor-pointer focus-within:ring-2">
                                         <span
                                             class="rounded-lg mt-2 bg-red-600 hover:bg-red-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300">
                                             Browse
@@ -248,7 +248,7 @@
 
                                 <div class="flex flex-col items-end gap-2 mt-10">
                                     <label for="files-upload"
-                                        class="relative font-semibold bg-white rounded-md cursor-pointer focus-within:ring-2">
+                                        class="relative font-semibold rounded-md cursor-pointer focus-within:ring-2">
                                         <span
                                             class="rounded-lg mt-2 bg-red-600 hover:bg-red-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300">
                                             Browse

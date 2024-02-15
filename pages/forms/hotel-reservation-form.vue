@@ -3,7 +3,7 @@
         <h1 class="text mt-10 mb-5">Hotel Reservation</h1>
 
         <div class="mx-auto max-w-7xl py-8 sm:px-6 lg:px-8">
-            <div class="bg-white p-6">
+            <div class="p-6">
                 <form action="">
                     <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                         <div>

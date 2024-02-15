@@ -1,8 +1,8 @@
 <template>
-    <div class="bg-white">
+    <div class="">
         <div class="max-w-2xl px-4 py-10 mx-auto sm:px-6 sm:py-10 lg:max-w-7xl lg:px-8">
-            <p class="font-bold text-blue-600 text-md">Offer Deals</p>
-            <p class="text-2xl font-bold text-gray-600">Flight Offer Deals</p>
+            <p class="font-bold text-blue-600 dark:text-gray-100 text-md">Offer Deals</p>
+            <p class="text-2xl font-bold text-gray-600 dark:text-gray-100">Flight Offer Deals</p>
 
             <div class="grid grid-cols-1 mt-8 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
                 <nuxt-link v-for="offer in store.places" :key="offer" to="" class="group">
@@ -11,8 +11,9 @@
                             class="object-cover object-center w-full h-full group-hover:opacity-75 transit" />
                     </div>
                     <div class="flex">
-                        <p class="mt-3 text-lg font-medium text-gray-900">{{ offer.title }} <span class="text-blue-600">{{
-                            offer.subtitle }}</span></p>
+                        <p class="mt-3 text-lg font-medium text-gray-700 dark:text-gray-900">{{ offer.title }} <span
+                                class="text-blue-600 dark:text-gray-100">{{
+                                    offer.subtitle }}</span></p>
                         <p class="mt-3.5 ml-auto text-lg font-medium text-gray-900">${{ offer.price }}</p>
                     </div>
 

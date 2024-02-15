@@ -1,5 +1,5 @@
 <template>
-    <div class="py-6 bg-white sm:py-8 lg:py-12">
+    <div class="py-6 sm:py-8 lg:py-12">
         <div class="px-4 mx-auto max-w-screen-2xl md:px-8">
             <h2 class="mb-4 text-2xl font-bold text-center text-gray-800 md:mb-8 lg:text-3xl">Login</h2>
 
@@ -23,7 +23,7 @@
 
                     <div class="relative flex items-center justify-center">
                         <span class="absolute inset-x-0 h-px bg-gray-300"></span>
-                        <span class="relative px-4 text-sm text-gray-400 bg-white">Log in with social</span>
+                        <span class="relative px-4 text-sm text-gray-400">Log in with social</span>
                     </div>
 
                     <button
@@ -39,7 +39,7 @@
                     </button>
 
                     <button
-                        class="flex items-center justify-center gap-2 px-8 py-3 text-sm font-semibold text-center text-gray-800 transition duration-100 bg-white border border-gray-300 rounded-lg outline-none ring-gray-300 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base">
+                        class="flex items-center justify-center gap-2 px-8 py-3 text-sm font-semibold text-center text-gray-800 transition duration-100 border border-gray-300 rounded-lg outline-none ring-gray-300 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base">
                         <svg class="w-5 h-5 shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path

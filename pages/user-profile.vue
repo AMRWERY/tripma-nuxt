@@ -1,6 +1,6 @@
 <template>
     <div class="max-w-full py-16 mx-auto sm:px-6 lg:px-8">
-        <div class="flex flex-col p-6 bg-white sm:flex-row">
+        <div class="flex flex-col p-6 sm:flex-row">
             <!-- First column (size 8) -->
             <div class="w-full pr-4 sm:w-2/3">
                 <form action="" class="space-y-8">
@@ -50,7 +50,7 @@
 
             <div class="w-full mt-4 sm:w-1/3 sm:mt-0">
                 <div
-                    class="max-w-2xl mx-4 mt-6 text-gray-900 bg-white rounded-lg shadow-xl sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto">
+                    class="max-w-2xl mx-4 mt-6 text-gray-900 rounded-lg shadow-xl sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto">
                     <div class="h-32 overflow-hidden rounded-t-lg">
                         <img class="object-cover object-top w-full"
                             src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ" />

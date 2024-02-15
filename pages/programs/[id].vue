@@ -1,5 +1,5 @@
 <template>
-    <section class="overflow-hidden text-gray-700 bg-white body-font">
+    <section class="overflow-hidden text-gray-700 body-font">
         <div class="px-5 py-12 mx-auto">
             <div class="flex flex-wrap mx-auto lg:w-4/5">
                 <img class="object-cover object-center w-full border border-gray-200 rounded lg:w-1/2 h-4/5"

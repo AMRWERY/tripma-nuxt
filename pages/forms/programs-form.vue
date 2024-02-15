@@ -3,7 +3,7 @@
         <h1 class="text mt-10 mb-5">Programs</h1>
         <!--Tabs navigation-->
         <div class="mx-auto max-w-5xl p-4">
-            <div class="bg-white dark:bg-slate-800 rounded-lg">
+            <div class="dark:bg-slate-800 rounded-lg">
                 <!--Tabs navigation-->
                 <ul class="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0" role="tablist" data-te-nav-ref>
                     <li role="presentation" class="flex-grow basis-0 text-center">

@@ -1,7 +1,6 @@
 <template>
     <div>
         <banner />
-        <find-reservation />
         <offer-deals />
         <great-destination />
         <fly-next-package />

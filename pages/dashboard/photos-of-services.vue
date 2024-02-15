@@ -49,7 +49,7 @@
                                         v-else />
                                     <div class="flex mt-4 text-sm leading-6 text-gray-600">
                                         <label for="car-file-upload"
-                                            class="relative font-semibold text-indigo-600 bg-white rounded-md cursor-pointer focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
+                                            class="relative font-semibold text-indigo-600 rounded-md cursor-pointer focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
                                             <span>Upload image</span>
                                             <input id="car-file-upload" name="car-file-upload" type="file" class="sr-only"
                                                 @change="getCarImage($event)" />
@@ -84,7 +84,7 @@
                                         v-else />
                                     <div class="flex mt-4 text-sm leading-6 text-gray-600">
                                         <label for="hotel-file-upload"
-                                            class="relative font-semibold text-indigo-600 bg-white rounded-md cursor-pointer focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
+                                            class="relative font-semibold text-indigo-600 rounded-md cursor-pointer focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
                                             <span>Upload image</span>
                                             <input id="hotel-file-upload" name="hotel-file-upload" type="file"
                                                 class="sr-only" @change="getHotelImage($event)" />
@@ -119,7 +119,7 @@
                                         v-else />
                                     <div class="flex mt-4 text-sm leading-6 text-gray-600">
                                         <label for="flight-file-upload"
-                                            class="relative font-semibold text-indigo-600 bg-white rounded-md cursor-pointer focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
+                                            class="relative font-semibold text-indigo-600 rounded-md cursor-pointer focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
                                             <span>Upload image</span>
                                             <input id="flight-file-upload" name="flight-file-upload" type="file"
                                                 class="sr-only" @change="getFlightImage($event)" />
@@ -154,7 +154,7 @@
                                         v-else />
                                     <div class="flex mt-4 text-sm leading-6 text-gray-600">
                                         <label for="program-file-upload"
-                                            class="relative font-semibold text-indigo-600 bg-white rounded-md cursor-pointer focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
+                                            class="relative font-semibold text-indigo-600 rounded-md cursor-pointer focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
                                             <span>Upload image</span>
                                             <input id="program-file-upload" name="program-file-upload" type="file"
                                                 class="sr-only" @change="getProgramImage($event)" />
@@ -188,7 +188,7 @@
                                         v-else />
                                     <div class="flex mt-4 text-sm leading-6 text-gray-600">
                                         <label for="train-file-upload"
-                                            class="relative font-semibold text-indigo-600 bg-white rounded-md cursor-pointer focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
+                                            class="relative font-semibold text-indigo-600 rounded-md cursor-pointer focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
                                             <span>Upload image</span>
                                             <input id="train-file-upload" name="train-file-upload" type="file"
                                                 class="sr-only" @change="getTrainImage($event)" />

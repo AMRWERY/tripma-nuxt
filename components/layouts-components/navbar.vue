@@ -1,13 +1,13 @@
 <template>
     <!-- Main navigation container -->
-    <nav class="relative flex w-full flex-wrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4"
+    <nav class="relative flex w-full flex-wrap items-center justify-between bg-[#FBFBFB] py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-slate-500 lg:py-4"
         data-te-navbar-ref>
         <div class="flex flex-wrap items-center justify-between w-full px-3">
             <div class="flex">
                 <nuxt-link to="/"
                     class="flex items-center mx-2 my-1 text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0">
                     <img class="w-auto h-8" src="https://svgsilh.com/svg/872480.svg" />
-                    <p class="ml-2 text-2xl xs:mt-1">Tripma</p>
+                    <p class="ml-2 text-2xl xs:mt-1 dark:text-white">Tripma</p>
                 </nuxt-link>
             </div>
 
@@ -55,21 +55,25 @@
 
                 <div class="flex items-center">
                     <nuxt-link to="/user-profile"
-                        class="inline-block pb-2 pt-2.5 text-xs font-medium leading-normal text-gray-400 hover:text-gray-600 rounded-full">
+                        class="inline-block pb-2 pt-2.5 text-xs font-medium leading-normal text-gray-400 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300 rounded-full">
                         <icon name="dashicons:admin-users" />
                     </nuxt-link>
                     <nuxt-link to="/dashboard"
-                        class="inline-block pl-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-gray-400 hover:text-gray-600 rounded-full">
+                        class="inline-block pl-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-gray-400 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300 rounded-full">
                         <icon name="charm:chart-line" />
                     </nuxt-link>
+                    <button type="button" @click="toggleTheme"
+                        class="inline-block pl-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-gray-400 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300 rounded-full">
+                        <icon :name="theme === 'dark' ? 'heroicons-solid:sun' : 'heroicons-solid:moon'" />
+                    </button>
                     <button type="button"
-                        class="inline-block px-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-gray-400 hover:text-gray-600 rounded-full">
+                        class="inline-block px-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-gray-400 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300 rounded-full">
                         <icon name="streamline:interface-text-formatting-translate-options-text-translate" />
                     </button>
                     <nuxt-link type="button" to="/auth"
                         class="px-5 py-2 text-sm font-semibold text-white bg-indigo-600 rounded-md shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Login</nuxt-link>
                     <button type="button"
-                        class="inline-block px-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-gray-400 hover:text-gray-600 rounded-full">
+                        class="inline-block px-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-gray-400 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300 rounded-full">
                         <icon name="ic:round-logout" />
                     </button>
                 </div>
@@ -79,6 +83,29 @@
 </template>
 
 <script setup>
+const theme = ref('light');
+
+const toggleTheme = () => {
+    theme.value = theme.value === 'dark' ? 'light' : 'dark';
+    sessionStorage.setItem('theme', theme.value);
+    updateThemeClasses(theme.value);
+};
+
+const updateThemeClasses = (newTheme) => {
+    const body = document.querySelector('body');
+    if (newTheme === 'dark') {
+        body.classList.add('dark');
+    } else {
+        body.classList.remove('dark');
+    }
+};
+
+onMounted(() => {
+    if (typeof sessionStorage !== 'undefined') {
+        updateThemeClasses(sessionStorage.getItem('theme') || 'light');
+    }
+});
+
 onMounted(async () => {
     const { Collapse, initTE } = await import("tw-elements");
     initTE({ Collapse });
